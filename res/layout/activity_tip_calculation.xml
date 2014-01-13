@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TipCalculation" >
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etEnterAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:hint="@string/enterAmountHint"
+        android:inputType="number"
+        android:ems="10" >
+
+    <requestFocus />
+    </EditText>
+    
+      <Button
+          android:id="@+id/btMidTip"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/etEnterAmount"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="85dp"
+          android:padding="20dp"
+          android:text="@string/midTip" 
+           	android:tag="20"
+       	android:onClick="calculateTip"
+      />
+    
+      
+      
+    <Button
+         android:id="@+id/btLowTip"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/btMidTip"
+         android:layout_toLeftOf="@id/btMidTip"
+         android:layout_marginRight="30dp"
+         android:padding="20dp"
+         android:text="@string/lowTip" 
+       	android:tag="15"
+       	android:onClick="calculateTip"
+         />
+   
+
+    <Button
+        android:id="@+id/btHighTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btMidTip"
+        android:layout_toRightOf="@id/btMidTip"
+        android:layout_marginLeft="30dp"
+        android:padding="20dp"
+        android:text="@string/highTip" 
+        android:tag="25"
+        android:onClick="calculateTip"
+        />
+    
+      <TextView
+        android:id="@+id/tvTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btMidTip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="@string/tipAmount"
+        android:textSize="18sp" 
+    	/>
+
+    
+</RelativeLayout>

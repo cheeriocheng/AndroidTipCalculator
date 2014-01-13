@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">tipCal</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="welcome">Welcome!</string>
+    <string name="lowTip">15%</string>
+    <string name="midTip">20%</string>
+    <string name="highTip">25%</string>
+    <string name="tipAmount">Click on percentage to calculate tip.</string>
+    <string name="enterAmountHint">Enter Bill Amount</string>
+
+</resources>
